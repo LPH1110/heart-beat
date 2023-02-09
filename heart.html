@@ -20,7 +20,6 @@
         height: 100%;
         padding: 0;
         margin: 0;
-        background: #000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -97,7 +96,7 @@
     </style>
   </head>
 
-  <body>
+  <body class="bg-black">
     <div class="box">
       <canvas id="pinkboard"></canvas>
     </div>
@@ -324,7 +323,7 @@
           }
           context.closePath();
           // create the fill
-          context.fillStyle = "rgb(220,38,38)";
+          context.fillStyle = "rgb(220 38 38)";
           context.fill();
           // create the image
           var image = new Image();
@@ -379,13 +378,8 @@
     </script>
     <div
       id="inner-text"
-      class="w-full h-full center-text bg-transparent absolute text-center flex flex-col items-center justify-center"
-      style="
-        color: rgb(167, 139, 250);
-        font-size: 31px;
-        font-style: italic;
-        margin-bottom: 5px;
-      "
+      class="text-pink-400 w-full h-full center-text bg-transparent absolute text-center flex flex-col items-center justify-center"
+      style="font-size: 31px; font-style: italic; margin-bottom: 5px"
     >
       <p>Chúc em ngủ ngon</p>
       <p>Hồng Ngọc iu dấu</p>
